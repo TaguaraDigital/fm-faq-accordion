@@ -1,0 +1,24 @@
+.faq {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    background: white;
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 80%;
+    
+    @include table {
+       grid-template-columns: 1fr 2fr;
+       grid-template-rows: 1fr;
+    }
+    
+    @include laptop {
+      grid-template-columns: 1fr 1fr;
+   }
+}
